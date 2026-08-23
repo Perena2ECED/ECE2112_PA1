@@ -26,13 +26,13 @@ The following functions and operators were used to create the syntax that would 
   
   > python_word() --> ythonp
 
-The combined functions are used to create a defined function that moves the first character of the string to the end.  <br>
+The combined functions are used to create a defined function that moves the first character of the string to the end.  
 
-> def rotate_word():
->  `return text[1: ] + text[0]` 
-   > `rotate_word("text")`
+  > def rotate_word():
+  > return text[1:] + text[0]
 
-    > rotate-word("A") --> 'A'
+  > rotate_word("A") --> 'A'
+
 # B. Username Builder Problem
 The problem asks to create a function that accepts two strings, first and last name, with the following requirements: all letters are in lowercase, the first and last name are joined by a period, and spaces are removed.
 

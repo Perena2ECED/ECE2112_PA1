@@ -103,4 +103,4 @@ swap_bookends(["red", "green", "blue"]) --> ['blue', 'green', 'red']
 * 2026, August 22 - README file was created, and the initial .ipynb file was uploaded.
 * 2026, August 23 - README file initial contents were input.
 * 2026, August 24 - The format and contents of the README file are still being finalized.
-* 2026, August 27 - Final touches for the README file were committed.
+* 2026, August 27 - Final touches for the README file and .ipynb file were committed.

@@ -11,24 +11,24 @@ The function name given was utilized to achieve the desired outputs following th
   > __Example:__ `rotate_word("python")` --> "ythonp"
 
 The following functions and operators were used to create the syntax that would follow the requirement given in the problem:
-* `text[1: ]` --> a built-in function called as __string slicing__, where it extracts a subset of a string starting from index 1, known as the second letter, until the end of the word.
+* `text[1: ]` --> a built-in syntax operator called __string slicing__, where it extracts a subset of a string starting from index 1, known as the second letter, until the end of the word.
   > __Example:__ text1 = "python" <br>    print(`text1[1: ]`) --> ython
   
-* `text[0]` --> a built-in function called as __string indexing__, it focuses on accessing the character located at index 0, the first character of the word.
+* `text[0]` --> a built-in syntax operator called __string indexing__, which focuses on accessing the character located at index 0, the first character of the word.
   > __Example:__ text1 = "python" <br> print(`text1[0]`) --> p
   
-* `+` -- > a built-in operator, known as __string concatenation operator__, that joins string together to a single one. <br>
+* `+` -- > a built-in operator, known as __string concatenation operator__, that joins string together to a single string. <br>
   > __Example:__ def python_word(): <br>
   > text1 = "ython" <br>
   > text2 = "p" <br>
   > result = text1 `+` text2 <br>
-  > return print(result) <br>
+  > print(result) <br>
   
   > python_word() --> ythonp
 
 The combined functions are used to create a defined function that moves the first character of the string to the end.  
 ```
-    def rotate_word():   
+    def rotate_word(text):   
         return text[1:] + text[0]
 
     rotate_word("A") --> 'A'
@@ -38,25 +38,24 @@ The problem asks to create a function that accepts two strings, first and last n
 
 The function name was used to achieve the desired output, so that it follows the requirements of the problem:
 * `make_username(first_name, last_name)` --> a user-defined function that accepts two names as strings and format it following the requirements asked. 
-    > __Example:__ `make_username("Ada", "Lovelace")` 
+    > __Example:__ `make_username("Ana Maria", "De Leon")` 
 
 The following string methods were used to achieve the desired output for the problem:
 * `.lower()` --> a built-in string method used to convert all letters in a string to lowercase.
-    > __Example:__ text1 = "Anna Maria"  <br>
-                  > text1`.lower()`
+    > __Example:__ text1 = "Ana Maria"  <br>
+                  > `text1.lower()`
 
-* `.replace(" ", "")` --> a built-in string method used to remove all spaces, placing an empty string in every blank space.
-    > __Example:__ text1 = "Anna Maria"  <br>
-    > text1`.replace(" ", "")`
+* `.replace(" ", "")` --> a built-in string method used to remove all spaces, replacing every space character with an empty string to remove gaps.
+    > __Example:__ text1 = "Ana Maria"  <br>
+    > `text1.replace(" ", "")`
 
-* `+` -- > a built-in operator, known as __string concatenation operator__, that joins string together to a single one.
+* `+` -- > a built-in operator, known as __string concatenation operator__, that joins string together to a single string.
   > __Example:__ def make_username():  <br>
   > uname1 = "anamaria"  <br>
   > uname2 = "deleon"  <br>
-  > result = uname1 `+` uname2  <br>
-  > return result
+  > result = uname1 `+` "." `+` uname2  <br>
   
-  > make_username()
+  > print(result)
 
 The following function and string methods were combined to achieve the desired syntax that will satisfy the requirements of the problem: 
 ```
@@ -66,7 +65,7 @@ The following function and string methods were combined to achieve the desired s
 
       return first_name + "." + last_name
 
-  make_username("Ada", "Lovelace") --> 'ada.lovelace'
+  make_username("Ana Maria", "De Leon") --> 'anamaria.deleon'
 ```
 
 # C. Bookend Swap Problem
@@ -80,15 +79,15 @@ The following feature and operator were combined to form a syntax that holds the
 * first, `*middle`, last --> a built-in Python feature used to combine into one the elements in between the first and last.
   > __Example:__ items = [1, `4,` 3] --> [4]
 
-* `+` -- > a built-in operator, known as __string concatenation operator__, that joins string together to a single one.
+* `+` -- > a built-in operator, known as __list concatenation operator__, that joins string together to a single list.
   > __Example:__ def items():  <br>
-  > first = [1]  <br>
+  > first = 1  <br>
   > middle = [2]  <br>
-  > last = [3]  <br>
-  > result = first `+` middle `+` last  <br>
+  > last = 3  <br>
+  > result = [last] `+` middle `+` [first]  <br>
   > return result  <br>
   
-  > def() --> [1, 2, 3]
+  > print(result) --> [1, 2, 3]
 
 The following functions were combined to the desired syntax that will satisfy the requirements of the problem: 
 ```
@@ -101,6 +100,7 @@ swap_bookends(["red", "green", "blue"]) --> ['blue', 'green', 'red']
 ```
 
 # Version History
-* 2026, August 22 - README File was created and the initial .ipynb file was uploaded.
-* 2026, August 23 - README File initial contents were input.
-* 2026, August 24 - The format and contents of the README File is still being finalized. 
+* 2026, August 22 - README file was created, and the initial .ipynb file was uploaded.
+* 2026, August 23 - README file initial contents were input.
+* 2026, August 24 - The format and contents of the README file are still being finalized.
+* 2026, August 27 - Final touches for the README file were committed.

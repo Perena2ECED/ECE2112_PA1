@@ -26,6 +26,10 @@ The following functions and operators were used to create the syntax that would 
   
   > python_word() --> ythonp
 
+
+To sum up the process used, when a string is passed into the `rotate_word(text)` function, the string slicing operator `text[1: ]` extracts all characters starting from the second position, index 1, to the end of the string. Simultaneously, the string indexing operator `text[0]` isolates the very first character of the string. Lastly, the string concatenation operator `+` joins the sliced substring and the isolated first character together, effectively moving the first letter of the word to the very end of the string.
+
+
 The combined functions are used to create a defined function that moves the first character of the string to the end.  
 ```
     def rotate_word(text):   
@@ -56,6 +60,8 @@ The following string methods were used to achieve the desired output for the pro
   > result = uname1 `+` "." `+` uname2  <br>
   
   > print(result)
+
+To sum up the process used, when two strings are passed into the `make_username(first_name, last_name)` function, the built-in string method `.lower()` converts all letters in the first and last names into lowercase. Following the .lower(), the `.replace(" ", "")` method removes any spaces within each name by replacing an empty string. Then it is joined by a string concatenation operator, `+` to have a joined first name and last name combined with a period, creating a single formatted username string. 
 
 The following function and string methods were combined to achieve the desired syntax that will satisfy the requirements of the problem: 
 ```
@@ -88,6 +94,8 @@ The following feature and operator were combined to form a syntax that holds the
   > return result  <br>
   
   > print(result) --> [1, 2, 3]
+
+To sum up the process used, when a list is passed into the `swap_bookends(items)` function, the feature `first, *middle, last = items` extracts the very first and last elements while compiling all remaining items as a middle list. Simultaneously, the `[last]` and `[first]` wrap the individual endpoints back into the list. Lastly, the list concatenation operator `+` joins these lists together in reverse order, effectively exchanging the positions of the first and last elements while keeping the middle elements in their original order.
 
 The following functions were combined to the desired syntax that will satisfy the requirements of the problem: 
 ```
